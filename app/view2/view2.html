@@ -1,5 +1,8 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<h2>Modificar usuario</h2>
+<form ng-submit="updateItem(user)">
+  <input type="text" ng-model="user.name" placeholder="Nombre" />
+  <br />
+  <input type="text" ng-model="user.email" placeholder="Email" />
+  <br />
+  <button type="submit">Añadir</button>
+</form>
